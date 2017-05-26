@@ -1,0 +1,15 @@
+{
+  "presets": [
+    [ "es2015", { "modules": false } ]
+  ],
+  "plugins": [
+    "transform-async-to-generator",
+    "transform-react-jsx",
+    ["react-css-modules",
+      { "filetypes": {
+        ".scss": "postcss-scss",
+      }}
+    ],
+    "react-hot-loader/babel",
+  ]
+}
